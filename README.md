@@ -146,6 +146,7 @@ edad = Integer.parseInt( consola.nextLine());
      System.out.println("edad = " + edad);
 
 INT A STRING
+
 var edadTexto = String.valueOf(10);
       System.out.println("edadTexto = " + edadTexto);    //”10” string
 
@@ -207,7 +208,7 @@ resultado = a * b;
 resultado = a % b;
      System.out.println("resultado = " + resultado);
         /* si el residuo del resultado de la divion de a/b es igual a cero es par
-si es igual a 1 es inpar
+si es igual a 1 es impar
 */
 if ( b % b == 0); //igualdad
      System.out.println("es par");
@@ -231,29 +232,30 @@ int area = a * b;
 OPERADORES DE ASIGNACION
 int a = 3, b = 2;
 int c = a + 5 - b;
-     System.out.println("c = " + c);
-//operador de composición
+     System.out.println("c = " + c);  //resultado: = 6
 
+OPERADOR DE COMPOSICION
 a += 1;//a = a + 1
-     System.out.println("a = " + a);
+     System.out.println("a = " + a); //4
 a += 3;// a = a + 3
-     System.out.println("a = " + a);
+     System.out.println("a = " + a);  //7
 a -= 2; // a = a – 2
-     System.out.println("a = " + a);
+     System.out.println("a = " + a);  //5
+     
  // *= , /= , %= multiplicacion, division y asignacion
- a *= 5; 
-     System.out.println("a = " + a);
-a /= 5;
-      System.out.println("a = " + a);
- a %= 2;
-       System.out.println("a = " + a);
+ a *= 5; //a = a * 5
+     System.out.println("a = " + a); //15
+a /= 5;  //a = a / 5
+      System.out.println("a = " + a); //3
+ a %= 2; //a = a % 2 (divisible entre 2)
+       System.out.println("a = " + a); //1
 
 OPERADORES UNARIOS
 //cambio de signo
         var a = 3;
         var b = -a;
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("a = " + a); //3
+        System.out.println("b = " + b); //-3
                      
         //operador de negacion, aplica para variables de tipo boolean
         //invertimos el valor de c usando el operador unario de negacion
@@ -267,27 +269,27 @@ OPERADORES UNARIOS
         //1. preincremento (simbolo antes de la variable)
         var e = 3;
         var f = ++e; //primero se incrementa la variable y despues se usa su valor
-        System.out.println("e = " + e);
-        System.out.println("f = " + f);
+        System.out.println("e = " + e); //4
+        System.out.println("f = " + f);  //4
         
         //2.posincremento (simbolo despues de la variable)
         var g = 5;
         var h = g++; //primero se utiliza el valor de la variable y luego se incrementa
-        System.out.println("g = " + g); //teniamos pendiente un incremento
-        System.out.println("h = " + h);
+        System.out.println("g = " + g); //6 (teniamos pendiente un incremento)
+        System.out.println("h = " + h); //5
         
         //decremento
         //1.predecremento
         var i = 2;  
         var j = --i; 
-        System.out.println("i = " + i); //ya esta decrementada
-        System.out.println("j = " + j);
+        System.out.println("i = " + i); //1 (ya esta decrementada)
+        System.out.println("j = " + j);  //1
         
         //2.posdecremento
         var k = 4;
         var l = k--;//primero se usa el valor de l avariable y queda pendiente l decremento
-        System.out.println("k = " + k);//queda pendiente un decremento
-        System.out.println("l = " + l);
+        System.out.println("k = " + k); //3 (queda pendiente un decremento)
+        System.out.println("l = " + l); //4
 
 OPERADORES DE IGUALDAD
 var a = 3;
