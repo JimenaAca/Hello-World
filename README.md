@@ -360,5 +360,156 @@ OPERADOPRES RELACIONLES
         } else {
             System.out.println("fuera de rango");
 
+PROCEDENCA DE OPERADORES EN JAVA
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--;
+        System.out.println("x = " + x); //6    
+        System.out.println("y = " + y); //9
+        System.out.println("z = " + z); //16
+        
+        var x = 10;
+        var y = 20;
+        var z = ++x + y--;
+        System.out.println("x = " + x); //11      
+        System.out.println("y = " + y); //19
+        System.out.println("z = " + z); //31
+        
+        var resultado = 4 + 5 * 6 / 3; //4 ((5 * 6)/3)= 14
+        System.out.println("resultado = " + resultado);
+        resultado = (4 + 5) * 6 / 3; //= 18
+        System.out.println("resultado = " + resultado);
+SENTENCIA DE CONTROL (IF)
+	var condicion = true;
+        if (condicion) {
+            System.out.println("es verdadero");
+            System.out.println("nueva linea");
+        } else {
+        }   System.out.println("es falso");
 
+EJEMPLO
+        int numero = 1;
+        var numeroTexto = "numero desconocido";
+        
+        if (numero == 1) {
+            System.out.println("numero uno");
+        }
+        else if (numero == 2) {
+            System.out.println("numero dos");
+        }
+        else if (numero == 3) {
+            System.out.println("numero tres");
+        }
+        else if (numero == 4) {
+            
+        }
+        else {
+            System.out.println("numero no encontrado");
+        }
+
+EJEMPLO 2 
+	var mes = 13;
+        var estacion = "Estacion desconocida";
+        if (mes == 1 || mes == 2 || mes == 12) {
+            estacion = "invierno";
+        }
+        else if (mes == 3 || mes == 4 || mes == 5) {
+            estacion = "primavera";
+        }
+        else if (mes == 6 || mes == 7 || mes == 8) {
+            estacion = "verano";
+        }
+        else if (mes == 9 || mes == 10 || mes == 11) {
+            estacion = "otono";
+        }
+        System.out.println("estacion = " + estacion);
+
+EJEMPLO 3 
+	var consola = new Scanner(System.in);
+        System.out.println("Proporciona el numero de mes");
+        var mes = Integer.parseInt(consola.nextLine());
+        var estacion = "Estacion desconocida";
+        
+        if (mes == 1 || mes == 2 || mes == 12) {
+            estacion = "invierno";
+        }
+        else if (mes == 3 || mes == 4 || mes == 5) {
+            estacion = "primavera";
+        }
+        else if (mes == 6 || mes == 7 || mes == 8) {
+            estacion = "verano";
+        }
+        else if (mes == 9 || mes == 10 || mes == 11) {
+            estacion = "otono";
+        }
+        System.out.println("estacion = " + estacion);
+
+SENTENCIA DE CONTROL SWITCH EN JAVA 
+	var numero = 2;
+        var numeroTexto = "valor desconocido";
+
+        switch (numero) {
+            case 1:
+                numeroTexto = "numero 1";
+                break;
+            case 2:
+                numeroTexto = "numero 2";
+                break;
+            case 3:
+                numeroTexto = "numero 3";
+                break;
+            case 4:
+                numeroTexto = "numero 4";
+                break;
+            default: 
+                numeroTexto = "caso no encontrado";
+        }
+        System.out.println("numeroTexto = " + numeroTexto);
+
+EJEMPLO 
+	Scanner consola = new Scanner(System.in);
+        System.out.println("Proporciona el numero del mes que corresponda: ");
+        var mes = Integer.parseInt(consola.nextLine());
+        var estacion = "estacion desconocida";
+
+        switch (mes) {
+            case 1: case 2: case 12:
+                estacion = "invierno";
+                break;
+            case 3: case 4: case 5:
+                estacion = "primavera";
+                break;
+            case 6: case 7: case 8 :
+                estacion = "verano";
+                break;
+            case 9: case 10: case 11:
+                estacion = "otono";
+                break;
+        }
+         System.out.println("estacion = " + estacion);      
+
+Ejercicio 2 
+	 Scanner consola = new Scanner(System.in);
+        System.out.println("Proporciona un valor entre 0 y 10: "); 
+        var valor = Integer.parseInt(consola.nextLine());
+        var resultado = "valor desconocido";
+        if (valor >= 9 && valor <= 10){
+            System.out.println("A");
+        }
+        else if (valor >= 8 && valor < 9){
+            System.out.println("B");
+        }        
+        else if (valor >= 7 && valor < 8){
+            System.out.println("C");
+        }        
+        else if (valor >= 6 && valor < 7){
+            System.out.println("D");
+        }
+        else if (valor >= 0 && valor < 6){
+            System.out.println("F");
+        }
+        else{
+            System.out.println("resultado = " + resultado);
+        }
+          
 
